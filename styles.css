@@ -16,9 +16,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid red 1px;
     border-radius: 16px;
     padding: 32px;
+    background-color: rgba(255, 255, 255, 0.3);
 
 }
 
@@ -41,4 +41,25 @@ body{
 
 .login input[type="password"]::placeholder{
     padding: 10px;
+}
+
+
+.gradient {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
